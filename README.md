@@ -59,7 +59,9 @@ t=linspace(0,2,100);
 
 ftheta1 = theta1(1) + a(1)*t.^3 + a(2)*t.^4 + a(3)*t.^5;
 
-plot(t,ftheta1,'linewidth',2);grid
+plot(t,ftheta1,'linewidth',2);
+
+grid
 
 xlabel('t');ylabel('\theta_1(t)')
 
@@ -69,7 +71,9 @@ ftheta2 = theta2(1) + b(1)*t.^3 + b(2)*t.^4 + b(3)*t.^5;
 
 figure()
 
-plot(t,ftheta2,'linewidth',2);grid
+plot(t,ftheta2,'linewidth',2);
+
+grid
 
 xlabel('t');ylabel('\theta_2(t)')
 
@@ -87,7 +91,9 @@ fx=L1*cos(ftheta1*pi/180) + L2*cos((ftheta1 + ftheta2)*pi/180);
 
 fy=L1*sin(ftheta1*pi/180) + L2*sin((ftheta1 + ftheta2)*pi/180);
 
-plot(fx,fy,'linewidth',2);grid
+plot(fx,fy,'linewidth',2);
+
+grid
 
 xlabel('x');ylabel('y')
 
